@@ -1,0 +1,36 @@
+<%- include('cabecalho.ejs')%>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <div class="success-container">
+            <div class="success-icon">✓</div>
+            <h2>Cadastrado com Sucesso!</h2>
+            <p class="success-message">A Música foi cadastrada no sistema.</p>
+
+            <div class="detail-box">
+                <h3>Dados Cadastrados</h3>
+                
+                <div class="detail-item">
+                    <label>Nome:</label>
+                    <p id="display-nome"><%=nome%></p>
+                </div>
+                
+                <div class="detail-item">
+                    <label>País:</label>
+                    <p id="display-pais"><%=pais%></p>
+                </div>
+                
+                <div class="detail-item">
+                    <label>Ano de Início:</label>
+                    <p id="display-ano"><%=anoinicio%></p>
+                </div>
+            </div>
+
+            <div class="success-buttons">
+                <a href="/musica/cadastro" class="btn btn-success">Cadastrar Outro Música</a>
+                <a href="/musica" class="btn btn-primary">Ver Lista de Músicas</a>
+                <a href="/" class="btn btn-secondary">Voltar ao Início</a>
+            </div>
+        </div>
+    </main>
+<%- include('rodape.ejs')%>

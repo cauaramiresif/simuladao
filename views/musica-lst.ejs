@@ -1,0 +1,44 @@
+<%- include('cabecalho.ejs')%>
+
+    <main class="container">
+        <div class="page-header">
+            <h2>Lista de Músicas</h2>
+            <a href="/musica/cadastro" class="btn btn-success">+ Nova Música</a>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Artista</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alegria Alegria</td>
+                        <td>Caetano Veloso</td>
+                        <td><a href="/musica/Alegria" class="link">Ver Detalhes</a></td>
+                    </tr>
+                    <tr>
+                        <td>Sozinho</td>
+                        <td>Caetano Veloso</td>
+                        <td><a href="/musica/Sozinho" class="link">Ver Detalhes</a></td>
+                    </tr>
+                    <tr>
+                        <td>Leaozinho</td>
+                        <td>Caetano Veloso</td>
+                        <td><a href="/musica/Leaozinho" class="link">Ver Detalhes</a></td>
+                    </tr>
+                    <tr>
+                        <td>Palco</td>
+                        <td>Gilberto Gil</td>
+                        <td><a href="/musica/Palco" class="link">Ver Detalhes</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+<%- include('rodape.ejs')%>
